@@ -1,0 +1,75 @@
+#camps {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#camps .section-title {
+    text-align: center;
+}
+
+#camps .section-subtitle {
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+#camp_buttons a {
+    text-decoration: none;
+    align-self: right;
+    display: flex;
+    justify-content: right;
+}
+
+#camps_content {
+    width: 50%;
+}
+
+#campeonatos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.campeonato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-neutral-0);
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.campeonato-avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.campeonato-content p {
+    display: flex;
+    color: var(--color-primary-6);
+    justify-content: center;
+    flex: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    #camps {
+        flex-direction: column;
+    }
+
+    #camps_content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
